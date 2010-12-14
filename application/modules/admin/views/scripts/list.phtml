@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><?php echo $this->title; ?></title>
+</head>
+<body>
+<h1><?php echo $this->title; ?></h1>
+<p><a href="<?php echo $this->insertLink; ?>">Incluir</a></p>
+<?php echo $this->searchForm; ?>
+<?php echo $this->table; ?>
+<a href="<?php echo $this->listLink . '/1'; ?>">Primeiro</a>
+<a href="<?php echo $this->listLink . '/' . ($this->currentPage-1); ?>">Anterior</a>
+<a href="<?php echo $this->listLink . '/' . ($this->currentPage+1); ?>">Próximo</a>
+<a href="<?php echo $this->listLink . '/' . ($this->lastPage+1); ?>">Último</a>
+</body>
+</html>
